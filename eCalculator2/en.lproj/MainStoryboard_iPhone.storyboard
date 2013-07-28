@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-6B-DCY">
+                                <items>
+                                    <navigationItem title="Calculator" id="uWD-2J-oJq"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PC-2r-Nej">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="W8u-Al-L7k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FeG-f5-rSg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="tJt-my-VD7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzE-1U-ErV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="8UN-1N-cmN"/>
+                                    <constraint firstAttribute="width" constant="68" id="MfI-93-ocw"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIU-zS-Wle">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQM-WM-whG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="0kn-mX-MWZ"/>
+                                    <constraint firstAttribute="width" constant="32" id="xed-Hd-Rik"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZI3-ql-4Ry">
+                                <color key="backgroundColor" red="0.28399149880000002" green="0.43178037600000002" blue="0.75" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="rfI-Ke-MQ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NQM-WM-whG" firstAttribute="baseline" secondItem="5PC-2r-Nej" secondAttribute="baseline" type="default" id="1Rq-y2-mvP"/>
+                            <constraint firstItem="VIU-zS-Wle" firstAttribute="baseline" secondItem="FeG-f5-rSg" secondAttribute="baseline" type="default" id="2xr-GK-iQy"/>
+                            <constraint firstItem="uzE-1U-ErV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="116" id="4rF-Gq-8O2"/>
+                            <constraint firstItem="VIU-zS-Wle" firstAttribute="baseline" secondItem="5PC-2r-Nej" secondAttribute="baseline" type="default" id="7Z4-vZ-L5k"/>
+                            <constraint firstItem="VIU-zS-Wle" firstAttribute="centerX" secondItem="uzE-1U-ErV" secondAttribute="centerX" type="default" id="H5N-el-eU2"/>
+                            <constraint firstItem="YwQ-6B-DCY" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Hn7-kN-iCY"/>
+                            <constraint firstItem="ZI3-ql-4Ry" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="103" id="MdS-ry-WJP"/>
+                            <constraint firstAttribute="bottom" secondItem="ZI3-ql-4Ry" secondAttribute="bottom" constant="149" id="MgT-lf-76Z"/>
+                            <constraint firstItem="uzE-1U-ErV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="122" id="aYq-nY-xFQ"/>
+                            <constraint firstItem="ZI3-ql-4Ry" firstAttribute="centerX" secondItem="NQM-WM-whG" secondAttribute="centerX" type="default" id="drj-D2-wEO"/>
+                            <constraint firstAttribute="trailing" secondItem="FeG-f5-rSg" secondAttribute="trailing" constant="14" id="geq-ep-VoL"/>
+                            <constraint firstItem="YwQ-6B-DCY" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="m7J-BD-leW"/>
+                            <constraint firstItem="5PC-2r-Nej" firstAttribute="top" secondItem="3" secondAttribute="top" constant="89" id="mfx-p4-Rwc"/>
+                            <constraint firstItem="YwQ-6B-DCY" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="nS1-31-atN"/>
+                            <constraint firstItem="5PC-2r-Nej" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="5" id="zeW-A6-IhR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="NQM-WM-whG" id="x8r-07-2fb"/>
+                        <outlet property="pickerView" destination="uzE-1U-ErV" id="wq1-Bq-5F0"/>
+                        <outlet property="textField1" destination="5PC-2r-Nej" id="Fod-Cm-5ku"/>
+                        <outlet property="textField2" destination="FeG-f5-rSg" id="x1J-T5-gCi"/>
+                        <outlet property="textField3" destination="ZI3-ql-4Ry" id="uXc-Pw-yWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="46"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
